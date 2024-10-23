@@ -1,0 +1,135 @@
+/*color*/
+/*accents*/
+/* typography */
+/*spacing*/
+.section_a {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section_a__image {
+  width: 150%;
+  display: flex;
+  justify-content: center;
+  outline: lime 1px;
+}
+.section_a__title {
+  font-family: "Red Hat Display", "helvetica";
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0px;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+.section_a__body {
+  font-family: "Red Hat Display", "helvetica";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: hsl(240, 10%, 57%);
+}
+
+.section_b__title {
+  font-family: "Red Hat Display", "helvetica";
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0px;
+  font-size: 2rem;
+}
+.section_b__support-info {
+  font-family: "Red Hat Display", "helvetica";
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0px;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+  color: hsl(192, 37%, 48%);
+}
+.section_b__body {
+  font-family: "Red Hat Display", "helvetica";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: hsl(240, 10%, 57%);
+}
+
+.footer {
+  background: url("../../images/mobile/image-footer.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  color: hsl(0, 0%, 98%);
+}
+.footer__title {
+  font-family: "Red Hat Display", "helvetica";
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0px;
+  font-size: 2rem;
+}
+.footer__body {
+  font-family: "Red Hat Display", "helvetica";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: hsl(0, 0%, 98%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; /* Get rid of all font sizes and heights */
+}
+
+html {
+  color-scheme: dark light; /* Default dark */
+  hanging-punctuation: first last; /* Not supported in Chrome */
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Media responsive */
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p {
+  max-width: 75ch;
+  text-wrap: pretty; /* Prevents orphans on lines */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wrapper {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(300px, 100vw, 2000px);
+  padding-inline: 2rem;
+}/*# sourceMappingURL=styles.css.map */

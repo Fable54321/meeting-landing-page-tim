@@ -1,0 +1,24 @@
+@use "../Abstracts/variables" as *;
+@use "../Abstracts/mixins" as m;
+
+
+
+.footer {
+    background: url('../../images/mobile/image-footer.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    color: $clr-neutral-100;
+      
+    
+    &__title {
+        @include m.text-title-all;
+        font-size: $fs-secondary-heading-mobile;
+        
+    }
+
+    &__body {
+        @include m.text-body-all;
+        color: $clr-neutral-100;
+    }
+}
+

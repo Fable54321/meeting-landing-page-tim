@@ -1,0 +1,19 @@
+@use "../Abstracts/variables" as *;
+@use "../Abstracts/mixins" as m;
+
+.section_b {
+    &__title {
+        @include m.text-title-all;
+        font-size: $fs-secondary-heading-mobile;
+    }
+    &__support-info {
+        @include m.text-title-all;
+        font-size: $fs-tersiary-heading-mobile;
+        letter-spacing: $sz-50;
+        color: $cyan-600
+    }
+    &__body {
+        @include m.text-body-all;
+        color: $clr-neutral-600;
+    }
+}

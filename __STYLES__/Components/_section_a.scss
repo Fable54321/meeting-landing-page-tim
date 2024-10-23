@@ -1,0 +1,28 @@
+@use "../Abstracts/variables" as *;
+@use "../Abstracts/mixins" as m;
+
+.section_a {
+    margin-top: $sz-800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    &__image {
+        width: 150%;
+        display: flex;
+        justify-content: center;
+        outline: lime 1px;
+    }
+   
+
+    &__title {
+        @include m.text-title-all;
+        font-size: $fs-heading-mobile;
+        margin-top: $sz-600;
+    }
+    &__body {
+        @include m.text-body-all;
+        color: $clr-neutral-600;
+    }
+}
+

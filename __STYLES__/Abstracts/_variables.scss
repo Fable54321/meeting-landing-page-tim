@@ -1,0 +1,58 @@
+/*color*/
+
+$clr-neutral-100: hsl(0,0%,98%);
+$clr-neutral-300: hsl(240, 18%, 85%);
+$clr-neutral-600: hsl(240, 10%, 57%);
+$clr-neutral-900: hsl(240,21%,20%);
+
+/*accents*/
+    $cyan-300: hsl(192, 90%, 77%);
+    $cyan-600: hsl(192,37%, 48%);
+    $purple-300: hsl(268,100%,86%);
+    $purple-600: hsl(268, 34%, 53%);
+
+
+/* typography */
+
+$ff-primary: "Red Hat Display", "helvetica";
+$ff-secondary: "Red Hat Display", "helvetica";
+
+
+$fs-heading-desktop: 4rem;
+$fs-heading-tablet: 3rem;
+$fs-heading-mobile: 2.5rem;
+
+$fs-secondary-heading-desktop: 2.5rem;
+$fs-secondary-heading-tablet: 2.25rem;
+$fs-secondary-heading-mobile: 2rem;
+
+$fs-tersiary-heading-desktop: 1rem;
+$fs-tersiary-heading-tablet: .875rem;
+$fs-tersiary-heading-mobile: .75rem;
+
+$fs-body-desktop: 1.125rem;
+$fs-body-tablet: 1rem;
+$fs-body-mobile: 1rem;
+
+$fs-decoration: 1rem;
+$fs-button: 1rem;
+
+
+$fw-500: 500;
+$fw-900: 900;
+
+
+/*spacing*/
+
+$sz-50: .25rem;
+$sz-100: .5rem;
+$sz-200: 1rem;
+$sz-300: 1.5rem;
+$sz-400: 2rem;
+$sz-500: 2.5rem;
+$sz-600: 3rem;
+$sz-700: 3.5rem;
+$sz-800: 4rem;
+$sz-900: 4.5rem;
+$sz-1000: 5rem;
+$sz-1400: 7rem;
