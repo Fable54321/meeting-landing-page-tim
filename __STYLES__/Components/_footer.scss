@@ -43,7 +43,7 @@
     
 
     *{
-        padding-inline: $sz-400;
+        padding-inline: 0;
 
         @media(min-width: 75em){
             padding: 0;
@@ -51,20 +51,20 @@
         
     }
 
-    &__layer {
+   /* &__layer {
        background-color: rgba($cyan-600, .875);
        display: flex;
        flex-direction: column;
        align-items: center;
        height: 100%;
-       width: 100%;
+       min-width: 100vw;
        padding: 0;
        padding-bottom: $sz-800;
 
        @media (min-width: 75em){
         padding-bottom: 0;
        }
-    }
+    } */
 
     &__decoration {
        @include m.decorative-number;
@@ -92,10 +92,15 @@
         
     }
 
+    
+
     &__body {
         @include m.text-body-all;
         color: $clr-neutral-100;
         margin-block: $sz-300;
+        
+        max-width: 311px;
+
 
         @media(min-width: 35em){
             max-width: 504px;

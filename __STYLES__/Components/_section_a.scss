@@ -14,20 +14,14 @@
     }
 
     
-    :not(:first-child){
-        padding-inline: $sz-400;
-
-        @media(min-width: 75em){
-            padding-inline: 0;
-        }
-
-    }
+   
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 103.5%;
+
        
 
         @media(min-width: 75em){
@@ -40,6 +34,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                
             }
 
             
@@ -92,9 +87,11 @@
         @include m.text-body-all;
         color: $clr-neutral-600;
         padding-block: $sz-300;
+        max-width: 305px;
 
         @media(min-width: 35em){
                 padding-inline: calc($sz-1400 + $sz-400);
+                max-width: none;
             }  
     }
 
