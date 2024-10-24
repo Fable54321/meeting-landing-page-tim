@@ -51,7 +51,7 @@
         
     }
 
-   /* &__layer {
+    &__layer {
        background-color: rgba($cyan-600, .875);
        display: flex;
        flex-direction: column;
@@ -64,7 +64,7 @@
        @media (min-width: 75em){
         padding-bottom: 0;
        }
-    } */
+    } 
 
     &__decoration {
        @include m.decorative-number;
