@@ -13,4 +13,56 @@
     font-size: $fs-body-mobile;
     line-height: 150%;
     letter-spacing: 0px;
+
+    @media(min-width:75em){
+        font-size: $fs-body-desktop;
+    }
+}
+
+@mixin button-big {
+    width: 193px;
+    height: 56px;
+    border: none;
+    font-size: $fs-button;
+    font-family: $ff-secondary;
+    font-weight: $fw-900;
+    color: $clr-neutral-100;
+    border-radius: 100vw;
+}
+
+@mixin button-small {
+    width: 161px;
+    height: 56px;
+    border: none;
+    font-size: $fs-button;
+    font-family: $ff-secondary;
+    font-weight: $fw-900;
+    color: $clr-neutral-100;
+    border-radius: 100vw;
+}
+
+
+@mixin decorative-number {
+        background-color: $clr-neutral-100;
+        border: 1px solid $clr-neutral-300;
+        border-radius: 100vw;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: relative;
+        font-family: $ff-secondary;
+        font-weight: $fw-900;
+        color: $clr-neutral-600;
+}
+
+@mixin decorative-number-pseudo {
+    content: " ";
+    background-color: $clr-neutral-300;
+    width: 1px;
+    height: 80px;
+    position:absolute;
+    bottom: 56px;
 }

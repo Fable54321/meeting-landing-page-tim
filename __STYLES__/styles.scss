@@ -8,7 +8,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    overflow-x: hidden;
+
+  
 }
 
 .wrapper {
@@ -17,5 +19,11 @@ body {
     flex-direction: column;
     align-items: center;
     width: clamp(300px, 100vw, 2000px);
-    padding-inline: $sz-400;
+    text-align: center;
+
+    @media(min-width: 75em){
+        margin-top: $sz-1000;
+    }
 }
+
+

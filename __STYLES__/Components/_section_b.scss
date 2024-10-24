@@ -2,18 +2,100 @@
 @use "../Abstracts/mixins" as m;
 
 .section_b {
+    padding-inline: $sz-400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $sz-800;
+
+    &__image{
+        display: grid;
+        gap: $sz-200;
+        grid-template-columns: 1fr 1fr;
+        padding-block: $sz-800;
+        img{
+            min-width: 39.3333%;
+            border-radius: $sz-100;
+        }
+
+        @media(min-width: 35em){
+            display: flex;
+            justify-content: space-around;
+
+            img{
+                min-width: 14%;
+                max-width: 22%;
+                
+            }
+        }
+
+        @media(min-width: 75em){
+            max-width: 1120px;
+            justify-content: center;
+            gap: $sz-400;
+        }
+    }
+
     &__title {
         @include m.text-title-all;
         font-size: $fs-secondary-heading-mobile;
+        margin-top: $sz-200;
+
+        &__line-break {
+            display: none;
+        }
+
+        @media(min-width: 35em){
+            font-size: $fs-secondary-heading-tablet;
+            max-width: 504px;
+
+            &__line-break {
+                display: block;
+               
+            }
+        }
+
+        @media (min-width: 75em){
+            font-size: $fs-secondary-heading-desktop;
+        }
     }
+
     &__support-info {
         @include m.text-title-all;
         font-size: $fs-tersiary-heading-mobile;
         letter-spacing: $sz-50;
-        color: $cyan-600
+        color: $cyan-600;
+
+        @media(min-width: 35em){
+            font-size: $fs-tersiary-heading-tablet;
+        }
+
+        @media(min-width: 75em){
+            font-size: $fs-tersiary-heading-desktop;
+        }
     }
+
+
     &__body {
         @include m.text-body-all;
         color: $clr-neutral-600;
+        margin-top: $sz-300;
+        margin-bottom: calc($sz-800 + 108px);
+
+        @media(min-width: 35em){
+            max-width: 504px;
+        }
+
+        @media(min-width: 75em){
+            margin-top: $sz-400;
+        }
+    }
+    &__decoration {
+        @include m.decorative-number;
+        margin-top: $sz-1000;
+       
+    }
+    &__decoration::before {
+        @include m.decorative-number-pseudo;
     }
 }
